@@ -1,0 +1,54 @@
+.components-article-row {
+    display: flex;
+    height: 150rpx;
+}
+.article-img {
+    width: 130rpx;
+    height: 130rpx;
+    flex: 0 0 130rpx;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.article-main {
+    flex: auto;
+    height: 150rpx;
+    padding-left: 20rpx;
+    padding-bottom: 20rpx;
+}
+.article-title{
+    height: 80rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.article-des {
+    height: 50rpx;
+    padding-top: 6rpx;
+    line-height: 44rpx;
+}
+.promotion-name{
+    line-height: 1;
+    padding: 8rpx 16rpx;
+}
+.promotion-name::after{
+    border-color: #ff314f;
+    border-radius: 10rpx;
+}
+.add-cart-btn{
+    width: 44rpx;
+    height: 44rpx;
+    vertical-align: top;
+    margin-left: 30rpx;
+}
+.promo-icon{
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    margin-top: -2px;
+}
+
+.inline-block{display: inline-block;}
+.red{
+    color: #ff314f;
+}

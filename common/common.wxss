@@ -1,0 +1,205 @@
+.border-box{
+  box-sizing: border-box;
+}
+.img{
+  width: 100%;
+}
+.inline-block{
+  display: inline-block;
+}
+.red{
+  color: #ff314f;
+}
+
+.paddingT10{
+  padding-top: 10px;
+}
+
+
+.fontBold{font-weight: bold;}
+.bold{font-weight: bold;}
+.text-center{text-align: center;}
+.text-left{text-align: left}
+.text-right{text-align: right}
+/*文字超出显示省略号*/
+.ellipsis{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.lineheight-normal{line-height:1.4;}
+.word-wrap{word-wrap:break-word}
+.line-through{
+  text-decoration: line-through;
+}
+.lineheight-1{line-height: 1;}
+.text-indent {text-indent: 1em; }
+/*=================================================================
+  布局相关
+  =================================================================*/
+.none{display: none;}
+.inline-block{display: inline-block;}
+.block{ display: block; }
+.table{display: table}
+.table-cell{display: table-cell}
+.vertical-align-middle{vertical-align-middle: middle;}
+.border-box{ box-sizing: border-box; }
+
+/*清除浮动*/
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden; }
+/*左浮动，右浮动*/
+.pull-left { float: left; }
+.pull-right { float: right; }
+.absolute { position: absolute; }
+.relative { position: relative; }
+.fixed { position: fixed; }
+/*分割线-虚线*/
+.cutLine-dashed{
+  display: block;
+  height: 0;
+  margin:5px 0;
+  border-bottom: 1px dashed #c8c8c8;
+}
+.vertical-line{
+  display: inline-block;
+  width: 2px;
+  height: 16px;
+  border-left: 2px;
+  background: #ccc;
+  vertical-align: middle;
+}
+/**
+动画
+ */
+/* 无限旋转 */
+@keyframes spin{
+  from {
+    transform:rotate(0);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+/** 先scale变大再变为原本尺寸，试用按钮点击 */
+
+@keyframes scale-spring{
+  0% {
+    opacity: .5;
+    transform: scale(.5);
+  }
+  80% {
+    opacity: .8;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/**
+加载更多公共样式
+ */
+.loading-more-box{
+
+}
+.loading-more-box .loading-more{
+  padding: 10px 0;
+  color: #999999;
+  text-align: center;
+}
+/**
+ 1像素解决方案
+*/
+.border-1px, .border-1px-t, .border-1px-b, .border-1px-tb, .border-1px-l, .border-1px-r {
+  position: relative;
+}
+
+.border-1px:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  border: 1px solid #C7C7C7;
+  color: #C7C7C7;
+  transform-origin: left top;
+  transform: scale(0.5);
+}
+
+.border-1px-t:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #C7C7C7;
+  color: #C7C7C7;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+
+.border-1px-b:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #C7C7C7;
+  color: #C7C7C7;
+  transform-origin: 0 100%;
+  transform: scaleY(0.5);
+}
+
+.border-1px-tb :before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #C7C7C7;
+  color: #C7C7C7;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+.border-1px-tb:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #C7C7C7;
+  color: #C7C7C7;
+  transform-origin: 0 100%;
+  transform: scaleY(0.5);
+}
+
+.border-1px-l:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  bottom: 0;
+  border-left: 1px solid #C7C7C7;
+  color: #C7C7C7;
+  transform-origin: 0 0;
+  transform: scaleX(0.5);
+}
+
+.border-1px-r:after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  bottom: 0;
+  border-right: 1px solid #C7C7C7;
+  color: #C7C7C7;
+  transform-origin: 100% 0;
+  transform: scaleX(0.5);
+}

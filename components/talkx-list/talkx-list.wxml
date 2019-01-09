@@ -1,0 +1,19 @@
+<!--component/article-list/article-list.wxml-->
+<talkx-list>
+  <view wx:for="{{talkxList}}" wx:for-item="item" wx:key="{{index}}" class="talkxList-container">
+    <view class="talkxList-author-info">
+      <image src="{{item.avatar}}"></image>
+      <text>{{item.date}}</text>
+    </view>
+    <text class="talkxList-title">{{item.title}}</text>
+    <image class="talkxList-bg" src="{{item.imgSrc}}" catchtap="getPostId" data-postId="{{item.postId}}"></image>
+    <text class="talkxList-desc">{{item.content}}
+  </text>
+    <view class="talkxList-like">
+      <image class="talkxList-like-img" src="/images/icon/chat.png"></image>
+      <text class="talkxList-like-font">{{item.reading}}</text>
+      <image class="talkxList-like-img" src="/images/icon/view.png"></image>
+      <text class="talkxList-like-font">{{item.collection}}</text>
+    </view>
+  </view>
+  </talkx-list>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "article-row": "../../components/article-row/index",
+    "article-card": "../../components/article-card/index"
+  }
+}

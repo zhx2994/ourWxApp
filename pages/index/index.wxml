@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="container page-home">
+<!-- 搜索区域 -->
+
+<!-- 轮播区域 -->
+  <view class="swiper-wrapper">
+    <swiper interval="3000" duration="500" autoplay="true" indicator-dots="true">
+      <block wx:for="{{imgUrls}}" wx:key="item">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 分类 -->
+  <view class="category-wrapper">
+    <view class="category-item border-box" wx:for="{{categoryList}}" wx:key="index">
+      <image class="category-item-image img" bindtap="{{item.click}}" mode="widthFix" src="{{item.image}}"></image>
+      <view>{{item.text}}</view>
+    </view>
+    <!-- <view class="category-item category-item-all border-box">
+      <image class="category-item-image img" mode="widthFix" src="../../common/images/example/icon-qb.png"></image>
+      <view>全部</view>
+    </view> -->
+  </view>
+  <!--最近购买-->
+  <view class="hot-article">
+    <view class="hot-article-title">
+      <image src="../../common/images/icon_hot.png" class="hot-article-title-img"/>
+      热评文章
+    </view>
+    <view class="article-row-wrapper border-1px-t">
+      <view class="article-row-item" wx:for="{{hotArticleData}}" wx:key="index">
+        <article-row program="{{item.program}}" title="{{item.title}}" image="{{item.image}}" id="{{item.id}}" my-class="pull-right"></article-row>
+      </view>
+    </view>
+  </view>
+  <!--热门推荐-->
+  <view class="hot-article-wrapper hot-article">
+    <view class="text-center hot-article-title">
+      文章推荐
+    </view>
+    <view class="article-row-wrapper top-article border-1px-t clearfix">
+      <view class="article-row-item" wx:for="{{hotArticleData}}" wx:key="index">
+        <article-card price="{{item.price}}" title="{{item.title}}" image="{{item.image}}" id="{{item.id}}"></article-card>
+      </view>
+    </view>
+  </view>
+</view>

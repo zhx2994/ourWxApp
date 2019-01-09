@@ -1,0 +1,20 @@
+<view class="components-article-row">
+   <view class="article-img">
+       <image class="img" src="{{image}}"></image>
+   </view>
+    <view class="article-main">
+        <view class="article-title">
+            <view>{{title}}</view>
+        </view>
+        <view class="article-des clearfix">
+            <view class="red inline-block">
+                <text class="paddingR20 article-des-program red">{{program}}</text>
+            </view>
+            <view class="my-class">
+                <view class="inline-block add-cart-btn" bindtap="addCart">
+                    <!-- <image class="img" src="{{isActive?'../../common/images/icon_gwc-dj.png':'../../common/images/icon_gwc-wdj.png'}}"></image> -->
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

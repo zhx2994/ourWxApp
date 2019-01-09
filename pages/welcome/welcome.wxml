@@ -1,0 +1,7 @@
+<view class="container">
+  <image src="{{userInfo.avatarUrl}}"></image>
+  <text class="user-name">嗨，{{userInfo.nickName}}</text>
+  <view class="bt-box" bindtap="onTap">
+    <text class="bt-text" catchtap="onTextTap">开启树鑫峰之旅</text>
+  </view>
+</view>

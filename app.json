@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/talkx/talkx",
+    "components/talkx-list/talkx-list",
+    "pages/talkx/talkxList-detail/talkxList-detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#405f80"
+  }
+}

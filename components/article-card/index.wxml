@@ -1,0 +1,9 @@
+<view class="article-card">
+    <view class="article-image">
+        <image class="img" src="{{image}}"></image>
+    </view>
+    <view class="article-main">
+        <view class="article-title ellipsis">{{title}}</view>
+        <view class="article-des red">{{program}}</view>
+    </view>
+</view>

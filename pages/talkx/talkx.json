@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "谈谈鑫声",
+  "usingComponents": {
+    "talkx-list": "../../components/talkx-list/talkx-list"
+  }
+}
